@@ -1,90 +1,70 @@
-# Next.js 13 Blog Tutorial: Build SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS 🔥
+# Getting Started with Create React App
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Nextjs-contentlayer-blog?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Nextjs-contentlayer-blog?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This repository contains **starter code** for Personal Blog website created using NextJs. <br />
+## Available Scripts
 
-For Demo and Final Code checkout following links👇: <br />
-[Nextjs Personal Blog Website Demo](https://create-blog-with-nextjs.vercel.app/) <br />
+In the project directory, you can run:
 
-Final Code👇: <br />
-[Nextjs Personal Blog Website Final Code](https://codebucks.gumroad.com/l/ypzlu) <br />
+### `npm start`
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-https://youtu.be/1QGLHOaRLwM <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/1QGLHOaRLwM?style=social)](https://youtu.be/1QGLHOaRLwM)<br />
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-<h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://www.buymeacoffee.com/CodeBucks" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br />
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Images of The Portfolio Website:
+### `npm test`
 
-#### Home
-![Nextjs Personal Blog Website](https://github.com/codebucks27/Nextjs-contentlayer-blog/blob/main/project%20images/Home-Big.png?raw=true)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### About
-![Nextjs Personal Blog Website About Page](https://github.com/codebucks27/Nextjs-contentlayer-blog/blob/main/project%20images/About-Big.png?raw=true)
+### `npm run build`
 
-#### Contact
-![Next.js Personal Blog Website Contact Page](https://github.com/codebucks27/Nextjs-contentlayer-blog/blob/main/project%20images/Cotnact-Big.png?raw=true)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-For more Images please check the [project images](https://github.com/codebucks27/Nextjs-contentlayer-blog/tree/main/project%20images) folder from this repo or check the demo link. 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Resources Used in This Project
+### `npm run eject`
 
-- Character image in the About page created by using [Bing Search[(https://www.bing.com/).
-- Lottie animation in the contact page: [from here](https://lottiefiles.com/animations/sloth-meditate-SzNofNFhYY)
-- Fonts from https://fonts.google.com/ <br />
-- Icons from https://iconify.design/ <br />
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### All the images used in the blogs:
-- Photo by <a href="https://unsplash.com/@kmuza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Carlos Muza</a> on <a href="https://unsplash.com/photos/hpjSkU2UYSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@marvelous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marvin Meyer</a> on <a href="https://unsplash.com/photos/SYTO3xs06fU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@pinjasaur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Paul Esch-Laurent</a> on <a href="https://unsplash.com/photos/oZMUrWFHOB4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/photos/-1_RZL8BGBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@laurenmancke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lauren Mancke</a> on <a href="https://unsplash.com/photos/aOC7TSLb1o8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luca Bravo</a> on <a href="https://unsplash.com/photos/XJXWbfSo2f0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/OtHEYbQXLFU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@cdx2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">C D-X</a> on <a href="https://unsplash.com/photos/PDX_a_82obo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/cZr2sgaxy3Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@emilep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emile Perron</a> on <a href="https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roman Synkevych</a> on <a href="https://unsplash.com/photos/vXInUOv1n84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Code Splitting
 
-## Deploy on Vercel
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Analyzing the Bundle Size
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
