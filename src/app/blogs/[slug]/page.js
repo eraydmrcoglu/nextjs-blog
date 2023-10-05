@@ -4,9 +4,43 @@ import Image from "next/image";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import { slug } from "github-slugger";
+import siteMetadata from "@/src/utils/siteMetaData";
 
 export async function generateStaticParams() {
   return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
+}
+
+export async function generateMetadata({ params }) {
+  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+  if (!blog) {
+    return;
+  }
+
+  const publishedAt = new Date(blog.publishedAt).toISOString();
+  const modifiedAt = new Date(blog.updatedAt || blog.publishedAt).toISOString();
+
+  const authors =blog?.author ? [blog.author] : siteMetadata.author;
+
+  return {
+    title: blog.title,
+    description: blog.description,
+    openGraph: {
+      title: blog.title,
+      description: blog.description,
+      url: siteMetadata.siteUrl + blog.url,
+      siteName: siteMetadata.title,
+      locale: "en_US",
+      type: "article",
+      publishedTime: publishedAt,
+      modifiedTime: modifiedAt,
+      authors: authors.length > 0 ? authors : [siteMetadata.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: siteMetadata.title,
+      description: blog.description
+    },
+  };
 }
 
 export default function BlogPage({ params }) {
@@ -34,6 +68,8 @@ export default function BlogPage({ params }) {
           width={blog.image.width}
           height={blog.image.height}
           className="aspect-square w-full h-full object-cover object-center"
+          priority
+          sizes="100vw"
         />
       </div>
       <BlogDetails blog={blog} slug={params.slug} />

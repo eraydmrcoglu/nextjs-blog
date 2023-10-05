@@ -1,5 +1,4 @@
 "use client";
-
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import React, { useEffect, useState } from "react";
 
@@ -12,12 +11,12 @@ const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
     const incrementView = async () => {
       try {
         let { error } = await supabase.rpc("increment", {
-          slug_text:slug,
+          slug_text: slug,
         });
 
         if (error) {
           console.error(
-            "Error incrementing view count inside try block",
+            "Error incrementing view count inside try block:",
             error
           );
         }
@@ -45,12 +44,12 @@ const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
 
         if (error) {
           console.error(
-            "Error incrementing view count inside try block",
+            "Error incrementing view count inside try block:",
             error
           );
-
-          setViews(data ? data.count : 0);
         }
+
+        setViews(data ? data.count : 0);
       } catch (error) {
         console.error(
           "An error occurred while incrementing the view count:",

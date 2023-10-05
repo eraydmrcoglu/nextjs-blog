@@ -41,25 +41,25 @@ const Footer = () => {
 
       <div className="flex items-center mt-8">
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/eraydemircioglu/"
           className="inline-block w-6 h-6 mr-4"
         >
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/eraydmrcoglu"
           className="inline-block w-6 h-6 mr-4"
         >
           <GithubIcon className="fill-light dark:fill-dark hover:scale-125 transition-all ease duration-200" />
         </a>
         <a
-          href="https://twitter.com"
+          href="https://twitter.com/eraydmrcoglu_"
           className="inline-block w-6 h-6 mr-4"
         >
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
         <a
-          href="https://dribbble.com"
+          href="https://dribbble.com/eraydmrcoglu"
           className="inline-block w-6 h-6 mr-4"
         >
           <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
@@ -67,7 +67,9 @@ const Footer = () => {
       </div>
 
       <div className="w-full mt-8 md:mt-10 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-col md:flex-row items-center justify-center">
-        <span className="text-center">&copy;2023 Eray Demircioglu. All rights reserved.</span>
+        <span className="text-center">
+          &copy;2023 Eray Demircioglu. All rights reserved.
+        </span>
       </div>
     </footer>
   );

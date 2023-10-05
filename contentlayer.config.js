@@ -1,4 +1,4 @@
-import { defineDocumentType, makeSource } from "contentlayer/source-files";
+import { makeSource, defineDocumentType } from "@contentlayer/source-files";
 import readingTime from "reading-time";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
@@ -55,30 +55,41 @@ const Blog = defineDocumentType(() => ({
       resolve: async (doc) => {
         const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
         const slugger = new GithubSlugger();
-        const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(({groups}) => {
-          const flag = groups?.flag;
-          const content = groups?.content;
+        const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(
+          ({ groups }) => {
+            const flag = groups?.flag;
+            const content = groups?.content;
 
-          return { 
-            level: flag?.length == 1 ? "one" : flag?.length == 2 ? "two" : "three",
-            text: content,
-            slug: content ? slugger.slug(content) : undefined
+            return {
+              level:
+                flag?.length == 1 ? "one" : flag?.length == 2 ? "two" : "three",
+              text: content,
+              slug: content ? slugger.slug(content) : undefined,
+            };
           }
-        })
+        );
 
         return headings;
-      }
-    }
+      },
+    },
   },
 }));
 
 const codeOptions = {
-  theme: "github-dark"
-}
+  theme: "github-dark",
+  grid: false,
+};
 
 export default makeSource({
+  /* options */
   contentDirPath: "content",
   documentTypes: [Blog],
-  mdx: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, {behavior: "append"}],
-  [rehypePrettyCode, codeOptions]]},
+  mdx: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [
+      rehypeSlug,
+      [rehypeAutolinkHeadings, { behavior: "append" }],
+      [rehypePrettyCode, codeOptions],
+    ],
+  },
 });
